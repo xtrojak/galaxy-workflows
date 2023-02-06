@@ -13,10 +13,10 @@
             "inputs": [
                 {
                     "description": "",
-                    "name": "sample.msp"
+                    "name": "input_msp_sample"
                 }
             ],
-            "label": "sample.msp",
+            "label": "input_msp_sample",
             "name": "Input dataset",
             "outputs": [],
             "position": {

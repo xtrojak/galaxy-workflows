@@ -1,6 +1,6 @@
 - doc: Example_pipeline
   job:
-    input_data:
+    input_msp_sample:
       class: File
       path: test-data/sample.msp
       filetype: "msp"
