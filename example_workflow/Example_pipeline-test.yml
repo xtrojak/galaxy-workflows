@@ -1,0 +1,11 @@
+- doc: Example_pipeline
+  job:
+    input_data:
+      class: File
+      path: test-data/sample.msp
+      filetype: "msp"
+  outputs:
+    expected_output:
+      file: test-data/output.msp
+      compare: diff
+      lines_diff: 0
