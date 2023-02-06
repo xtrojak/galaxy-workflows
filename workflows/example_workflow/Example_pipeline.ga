@@ -112,7 +112,7 @@
             "uuid": "ddb1870c-138a-4a7d-9605-c3ee2638387b",
             "workflow_outputs": [
                 {
-                    "label": null,
+                    "label": expected_output,
                     "output_name": "output_file",
                     "uuid": "0e85e799-eab1-4075-aeb2-c5366e522c24"
                 }

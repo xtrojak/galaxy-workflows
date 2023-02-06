@@ -5,7 +5,7 @@
       path: test-data/sample.msp
       filetype: "msp"
   outputs:
-    output_file:
+    expected_output:
       file: test-data/output.msp
       compare: diff
       lines_diff: 0
