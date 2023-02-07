@@ -7,6 +7,6 @@
   outputs:
     expected_output:
       class: File
-      file: test-data/output.msp
+      path: test-data/output.msp
       compare: diff
       lines_diff: 0
