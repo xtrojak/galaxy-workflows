@@ -1,141 +1,153 @@
 {
-    "a_galaxy_workflow": "true",
-    "annotation": "",
-    "format-version": "0.1",
-    "name": "example-workflow",
-    "steps": {
-        "0": {
-            "annotation": "",
-            "content_id": null,
-            "errors": null,
-            "id": 0,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "",
-                    "name": "workflow_input"
-                }
-            ],
-            "label": "workflow_input",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 0,
-                "top": 6
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"tag\": null}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "95aca84e-763b-4f59-ad0e-9896090d3052",
-            "workflow_outputs": [
-                {
-                    "label": null,
-                    "output_name": "output",
-                    "uuid": "f515baa7-5449-4fda-87b0-4e0f441c6955"
-                }
-            ]
-        },
-        "1": {
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/recetox/msmetaenhancer/msmetaenhancer/0.2.5+galaxy1",
-            "errors": null,
-            "id": 1,
-            "input_connections": {
-                "input_file": {
-                    "id": 0,
-                    "output_name": "output"
-                }
-            },
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool MSMetaEnhancer",
-                    "name": "input_file"
-                }
-            ],
-            "label": null,
-            "name": "MSMetaEnhancer",
-            "outputs": [
-                {
-                    "name": "output_file",
-                    "type": "msp"
-                }
-            ],
-            "position": {
-                "left": 331,
-                "top": 0
-            },
-            "post_job_actions": {
-                "HideDatasetActionoutput_file": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "output_file"
-                }
-            },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/recetox/msmetaenhancer/msmetaenhancer/0.2.5+galaxy1",
-            "tool_shed_repository": {
-                "changeset_revision": "a2bf129850ea",
-                "name": "msmetaenhancer",
-                "owner": "recetox",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"input_file\": {\"__class__\": \"RuntimeValue\"}, \"jobs\": null, \"options\": {\"logging\": {\"output_log\": \"false\", \"__current_case__\": 1}}, \"ordered_jobs\": [{\"__index__\": 0, \"ordered_jobs_select\": \"compound_name canonical_smiles PubChem\"}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "0.2.5+galaxy1",
-            "type": "tool",
-            "uuid": "3eca4463-40ec-4ec0-8442-b51dc4637dba",
-            "workflow_outputs": []
-        },
-        "2": {
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/recetox/msmetaenhancer/msmetaenhancer/0.2.5+galaxy1",
-            "errors": null,
-            "id": 2,
-            "input_connections": {
-                "input_file": {
-                    "id": 1,
-                    "output_name": "output_file"
-                }
-            },
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool MSMetaEnhancer",
-                    "name": "input_file"
-                }
-            ],
-            "label": null,
-            "name": "MSMetaEnhancer",
-            "outputs": [
-                {
-                    "name": "output_file",
-                    "type": "msp"
-                }
-            ],
-            "position": {
-                "left": 643,
-                "top": 61
-            },
-            "post_job_actions": {},
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/recetox/msmetaenhancer/msmetaenhancer/0.2.5+galaxy1",
-            "tool_shed_repository": {
-                "changeset_revision": "a2bf129850ea",
-                "name": "msmetaenhancer",
-                "owner": "recetox",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"input_file\": {\"__class__\": \"RuntimeValue\"}, \"jobs\": null, \"options\": {\"logging\": {\"output_log\": \"false\", \"__current_case__\": 1}}, \"ordered_jobs\": [{\"__index__\": 0, \"ordered_jobs_select\": \"compound_name inchi PubChem\"}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "0.2.5+galaxy1",
-            "type": "tool",
-            "uuid": "e623a200-722f-484e-ba1a-664375604869",
-            "workflow_outputs": [
-                {
-                    "label": expected_output,
-                    "output_name": "output_file",
-                    "uuid": "0fd022e8-bcd8-40a4-9212-d6dadec095eb"
-                }
-            ]
-        }
-    },
-    "tags": [],
-    "uuid": "7eddcbfa-0d9f-47d8-b004-536d0dca6c55",
-    "version": 1
+   "a_galaxy_workflow":"true",
+   "annotation":"",
+   "format-version":"0.1",
+   "name":"example-workflow",
+   "steps":{
+      "0":{
+         "annotation":"",
+         "content_id":null,
+         "errors":null,
+         "id":0,
+         "input_connections":{
+            
+         },
+         "inputs":[
+            {
+               "description":"",
+               "name":"workflow_input"
+            }
+         ],
+         "label":"workflow_input",
+         "name":"Input dataset",
+         "outputs":[
+            
+         ],
+         "position":{
+            "left":0,
+            "top":6
+         },
+         "tool_id":null,
+         "tool_state":"{\"optional\": false, \"tag\": null}",
+         "tool_version":null,
+         "type":"data_input",
+         "uuid":"95aca84e-763b-4f59-ad0e-9896090d3052",
+         "workflow_outputs":[
+            {
+               "label":null,
+               "output_name":"output",
+               "uuid":"f515baa7-5449-4fda-87b0-4e0f441c6955"
+            }
+         ]
+      },
+      "1":{
+         "annotation":"",
+         "content_id":"toolshed.g2.bx.psu.edu/repos/recetox/msmetaenhancer/msmetaenhancer/0.2.5+galaxy1",
+         "errors":null,
+         "id":1,
+         "input_connections":{
+            "input_file":{
+               "id":0,
+               "output_name":"output"
+            }
+         },
+         "inputs":[
+            {
+               "description":"runtime parameter for tool MSMetaEnhancer",
+               "name":"input_file"
+            }
+         ],
+         "label":null,
+         "name":"MSMetaEnhancer",
+         "outputs":[
+            {
+               "name":"output_file",
+               "type":"msp"
+            }
+         ],
+         "position":{
+            "left":331,
+            "top":0
+         },
+         "post_job_actions":{
+            "HideDatasetActionoutput_file":{
+               "action_arguments":{
+                  
+               },
+               "action_type":"HideDatasetAction",
+               "output_name":"output_file"
+            }
+         },
+         "tool_id":"toolshed.g2.bx.psu.edu/repos/recetox/msmetaenhancer/msmetaenhancer/0.2.5+galaxy1",
+         "tool_shed_repository":{
+            "changeset_revision":"a2bf129850ea",
+            "name":"msmetaenhancer",
+            "owner":"recetox",
+            "tool_shed":"toolshed.g2.bx.psu.edu"
+         },
+         "tool_state":"{\"input_file\": {\"__class__\": \"RuntimeValue\"}, \"jobs\": null, \"options\": {\"logging\": {\"output_log\": \"false\", \"__current_case__\": 1}}, \"ordered_jobs\": [{\"__index__\": 0, \"ordered_jobs_select\": \"compound_name canonical_smiles PubChem\"}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+         "tool_version":"0.2.5+galaxy1",
+         "type":"tool",
+         "uuid":"3eca4463-40ec-4ec0-8442-b51dc4637dba",
+         "workflow_outputs":[
+            
+         ]
+      },
+      "2":{
+         "annotation":"",
+         "content_id":"toolshed.g2.bx.psu.edu/repos/recetox/msmetaenhancer/msmetaenhancer/0.2.5+galaxy1",
+         "errors":null,
+         "id":2,
+         "input_connections":{
+            "input_file":{
+               "id":1,
+               "output_name":"output_file"
+            }
+         },
+         "inputs":[
+            {
+               "description":"runtime parameter for tool MSMetaEnhancer",
+               "name":"input_file"
+            }
+         ],
+         "label":null,
+         "name":"MSMetaEnhancer",
+         "outputs":[
+            {
+               "name":"output_file",
+               "type":"msp"
+            }
+         ],
+         "position":{
+            "left":643,
+            "top":61
+         },
+         "post_job_actions":{
+            
+         },
+         "tool_id":"toolshed.g2.bx.psu.edu/repos/recetox/msmetaenhancer/msmetaenhancer/0.2.5+galaxy1",
+         "tool_shed_repository":{
+            "changeset_revision":"a2bf129850ea",
+            "name":"msmetaenhancer",
+            "owner":"recetox",
+            "tool_shed":"toolshed.g2.bx.psu.edu"
+         },
+         "tool_state":"{\"input_file\": {\"__class__\": \"RuntimeValue\"}, \"jobs\": null, \"options\": {\"logging\": {\"output_log\": \"false\", \"__current_case__\": 1}}, \"ordered_jobs\": [{\"__index__\": 0, \"ordered_jobs_select\": \"compound_name inchi PubChem\"}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+         "tool_version":"0.2.5+galaxy1",
+         "type":"tool",
+         "uuid":"e623a200-722f-484e-ba1a-664375604869",
+         "workflow_outputs":[
+            {
+               "label":"expected_output",
+               "output_name":"output_file",
+               "uuid":"0fd022e8-bcd8-40a4-9212-d6dadec095eb"
+            }
+         ]
+      }
+   },
+   "tags":[
+      
+   ],
+   "uuid":"7eddcbfa-0d9f-47d8-b004-536d0dca6c55",
+   "version":1
 }
