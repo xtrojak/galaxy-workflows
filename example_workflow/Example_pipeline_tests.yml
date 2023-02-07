@@ -1,11 +1,12 @@
-- doc: Example_pipeline
+- doc: Test outline for Example_pipeline.ga
   job:
-    sample.msp:
+    workflow_input:
       class: File
       path: test-data/sample.msp
       filetype: "msp"
   outputs:
     expected_output:
+      class: File
       file: test-data/output.msp
       compare: diff
       lines_diff: 0

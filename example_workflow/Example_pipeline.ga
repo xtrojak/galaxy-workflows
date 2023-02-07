@@ -13,10 +13,10 @@
             "inputs": [
                 {
                     "description": "",
-                    "name": "sample.msp"
+                    "name": "workflow_input"
                 }
             ],
-            "label": "sample.msp",
+            "label": "workflow_input",
             "name": "Input dataset",
             "outputs": [],
             "position": {
@@ -128,7 +128,7 @@
             "uuid": "e623a200-722f-484e-ba1a-664375604869",
             "workflow_outputs": [
                 {
-                    "label": null,
+                    "label": expected_output,
                     "output_name": "output_file",
                     "uuid": "0fd022e8-bcd8-40a4-9212-d6dadec095eb"
                 }
