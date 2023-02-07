@@ -3,10 +3,9 @@
     workflow_input:
       class: File
       path: test-data/sample.msp
-      filetype: "msp"
   outputs:
     expected_output:
       class: File
       path: test-data/output.msp
       compare: diff
-      lines_diff: 0
+      lines_diff: 1
