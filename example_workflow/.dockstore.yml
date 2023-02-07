@@ -4,4 +4,4 @@ workflows:
   primaryDescriptorPath: /Example_pipeline.ga
   subclass: Galaxy
   testParameterFiles:
-  - /Example_pipeline-test.yml
+  - /Example_pipeline_tests.yml
