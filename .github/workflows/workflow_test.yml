@@ -9,7 +9,7 @@ on:
 jobs:
   setup:
     name: Setup cache and determine changed repositories
-    uses: ./.github/workflows/setup.yml
+    uses: galaxyproject/iwc/.github/workflows/setup.yml@main
     with:
       python-version-list: "[\"3.7\"]"
       galaxy-fork: galaxyproject
@@ -51,7 +51,7 @@ jobs:
     name: Test workflows
     needs: setup
     if: needs.setup.outputs.repository-list != ''
-    uses: ./.github/workflows/test_workflows.yml
+    uses: galaxyproject/iwc/.github/workflows/test_workflows.yml@main
     with:
       galaxy-head-sha: ${{ needs.setup.outputs.galaxy-head-sha }}
       chunk-count: ${{ fromJSON(needs.setup.outputs.chunk-count) }}
