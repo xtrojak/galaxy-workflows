@@ -1,4 +1,4 @@
-- doc: Test outline for Example_pipeline.ga
+- doc: Test outline for Example_pipeline.ga (change)
   job:
     workflow_input:
       class: File
